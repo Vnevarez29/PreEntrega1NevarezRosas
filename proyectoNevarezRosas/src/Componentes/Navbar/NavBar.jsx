@@ -5,6 +5,7 @@ import "./NavBar.css"
 export const NavBar = () => {
     return (
         <>
+    
             <img src='./logo.jpg' alt='' className='logo'></img>
             <ul>
                 <li>

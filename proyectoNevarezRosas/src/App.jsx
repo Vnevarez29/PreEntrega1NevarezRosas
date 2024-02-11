@@ -2,16 +2,17 @@
 import { NavBar } from './Componentes/Navbar/NavBar'
 import ItemListContainer from './Componentes/ItemListContainer/itemListContainer'
 import ItemCount from './Componentes/ItemCount/ItemCount'
+import { Button } from 'react-bootstrap';
 
 function App() {
   return (
     <>
       <div>
-        <NavBar/>
-        <ItemListContainer greeting={"Bienvenido a mi E-commerce"}/>
-        <ItemCount/>
+        <NavBar />
+        <ItemListContainer />
+        <ItemCount />
       </div>
-      
+
     </>
   )
 }
