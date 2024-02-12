@@ -40,9 +40,9 @@ const ItemCount = () =>
     <div>
         <h1>Contador de ejemplo</h1>
         <p>Contador: {contador}</p> 
-        <button className="my-button" onClick={aumentar}>Incrementar</button> <br /><br />
-        <button className="my-button" onClick={agregarCarrito}>Agregar al carrito</button> <br /><br />
-        <button className="my-button" onClick={decrementar}>Decrementar</button>
+        <button className="boton" onClick={aumentar}>+</button> 
+        <button className="boton" onClick={agregarCarrito}>Agregar al carrito</button>
+        <button className="boton" onClick={decrementar}>-</button>
 
     </div>
   )

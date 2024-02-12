@@ -21,7 +21,7 @@ const ItemListContainer = () => {
   }, [])
 
   return (
-    <div className='container estilo'>
+    <div className='estilo'>
       {arrayProductos.length == 0 ? 
       <h1> cargando...</h1> :
         <ItemList productos={arrayProductos}/>

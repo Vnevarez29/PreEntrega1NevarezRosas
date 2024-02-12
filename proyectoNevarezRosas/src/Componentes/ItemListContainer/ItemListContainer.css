@@ -1,6 +1,8 @@
 .estilo{
-    flex-wrap: wrap;
+    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    padding-right: 20px;
 }

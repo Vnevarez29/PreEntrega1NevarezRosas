@@ -17,3 +17,14 @@
   .my-button:active {
     background-color: #3e8e41;
   }
+
+  .boton{
+    width: 0 auto;
+    height:  0 auto;
+    background-color: pink;
+    border: none;
+    border-radius: 10%;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 10px;
+  }

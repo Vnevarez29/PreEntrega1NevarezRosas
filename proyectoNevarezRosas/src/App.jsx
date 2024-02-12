@@ -4,6 +4,7 @@ import ItemListContainer from './Componentes/ItemListContainer/itemListContainer
 import ItemCount from './Componentes/ItemCount/ItemCount'
 import Footer from './Componentes/Footer/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ItemDetailContainer from './Componentes/ItemDetailContainer/ItemDetailContainer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       </div>
       <div>
         <footer />
+        <ItemDetailContainer id={2}/>
       </div>
     </>
   )
