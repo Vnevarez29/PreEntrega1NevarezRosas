@@ -9,7 +9,8 @@ const ItemDetail = ({prod}) => {
       <h4 className='negritas'>${prod.precio}</h4>
       <h4 className='negritas'>Stock:{prod.stock}</h4>
       <p className='parrafo'>{prod.description}</p>
-      <ItemCount/>
+
+      <ItemCount valInicial={1} stock={prod.stock}/>
     </div>
   )
 }

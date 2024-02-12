@@ -1,24 +1,16 @@
-.my-button {
-    padding: 5px, 5px, 5px, 5px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: auto;
-    height: 20px;
-    font-size: 15px;
-  }
-  
-  .my-button:hover {
-    background-color: #45a049;
-  }
-  
-  .my-button:active {
-    background-color: #3e8e41;
-  }
 
   .boton{
+    width: 20px;
+    height:  0 auto;
+    background-color: pink;
+    border: none;
+    border-radius: 10%;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .botonAdd{
     width: 0 auto;
     height:  0 auto;
     background-color: pink;
@@ -27,4 +19,8 @@
     font-weight: bold;
     margin-right: 10px;
     margin-left: 10px;
+  }
+
+  .parrafo{
+    text-align: center;
   }

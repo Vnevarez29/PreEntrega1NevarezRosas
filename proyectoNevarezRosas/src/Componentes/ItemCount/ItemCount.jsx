@@ -26,7 +26,6 @@ const ItemCount = () =>
         else
         {
             alert ("Agrega algo al carrito");
-
         }
     }
 
@@ -35,15 +34,12 @@ const ItemCount = () =>
         alert("Se han agregado "+contador+" elementos al carrito")
     }
 
-
   return (
     <div>
-        <h1>Contador de ejemplo</h1>
-        <p>Contador: {contador}</p> 
+        <p>{contador}</p> 
         <button className="boton" onClick={aumentar}>+</button> 
-        <button className="boton" onClick={agregarCarrito}>Agregar al carrito</button>
+        <button className="botonAdd" onClick={agregarCarrito}>Agregar al carrito</button>
         <button className="boton" onClick={decrementar}>-</button>
-
     </div>
   )
 }
