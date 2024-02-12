@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "img": "./src/assets/img/Ari-Arianna-Grande.jpeg",
         "nombre": "Ari by Arianna Grande",
         "precio": 1450,
         "stock": 5,
@@ -9,6 +10,7 @@
 
     {
         "id": 2,
+        "img": "./src/assets/img/Cloud-Arianna-Grande.jpeg",
         "nombre": "Cloud by Arianna Grande",
         "precio": 1500,
         "stock": 10,
@@ -16,6 +18,7 @@
     },
     {
         "id": 3,
+        "img": "./src/assets/img/Cloud-pink-Arianna-Grande.jpeg",
         "nombre": "Cloud Pink by Arianna Grande",
         "precio": 1700,
         "stock": 5,
@@ -23,6 +26,7 @@
     },
     {
         "id": 4,
+        "img": "./src/assets/img/Moon-Arianna-Grande.jpeg",
         "nombre": "Moon by Arianna Grande",
         "precio": 1450,
         "stock": 6,
@@ -30,6 +34,7 @@
     },
     {
         "id": 5,
+        "img": "./src/assets/img/Rem-Arianna-Grande.jpeg",
         "nombre": "Rem by Arianna Grande",
         "precio": 1200,
         "stock": 4,
@@ -37,6 +42,7 @@
     },
     {
         "id": 6,
+        "img": "./src/assets/img/Sweet-Arianna-Grande.jpeg",
         "nombre": "Sweet like candy (pink) by Arianna Grande",
         "precio": 1250,
         "stock": 6,
@@ -44,6 +50,7 @@
     },
     {
         "id": 7,
+        "img": "./src/assets/img/SweetCandy-Arianna-Grande.webp",
         "nombre": "Sweet like candy (red, special edition) by Arianna Grande",
         "precio": 1600,
         "stock": 3,
@@ -51,6 +58,7 @@
     },
     {
         "id": 8,
+        "img": "./src/assets/img/thankyou-rose-Arianna-Grande.jpeg",
         "nombre": "Thank U Next by Arianna Grande",
         "precio": 1600,
         "stock": 6,

@@ -1,13 +1,15 @@
 import React from 'react'
 import { CartWidget } from '../CartWidget/CartWidget'
 import "./NavBar.css"
+import Navbar from 'react-bootstrap/Button';
+import { NavbarBrand } from 'react-bootstrap';
 
 export const NavBar = () => {
     return (
         <>
-    
-            <img src='./logo.jpg' alt='' className='logo'></img>
-            <ul>
+            <div className='barra'>
+                <img src='./logo.png' alt='' className='logo'></img>
+
                 <li>
                     <a>Inicio</a>
                 </li>
@@ -15,12 +17,15 @@ export const NavBar = () => {
                     <a>Productos</a>
                 </li>
                 <li>
-                    <a>Contacto</a>
+                    <a>Buscar</a>
                 </li>
-            </ul>
-            
-            {/* Componente cardwidget */}
-            <CartWidget/>
+
+
+
+                {/* Componente cardwidget */}
+                <CartWidget />
+
+            </div>
 
         </>
 
