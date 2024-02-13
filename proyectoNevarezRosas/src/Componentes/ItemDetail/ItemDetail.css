@@ -3,8 +3,9 @@ h3{
 
 }
 
-.parrafo{
+.parr{
     font-size: 14px;
+    text-align: center;
 }
 
 .imagen{
@@ -20,4 +21,5 @@ h3{
     justify-content: center;
     align-items: center;
     padding: 10px;
+    margin: 20px;
 }

@@ -14,7 +14,13 @@ export const NavBar = () => {
                     <NavLink to={'/'}className='links'>Inicio</NavLink>
                 </li>
                 <li>
-                    <NavLink to={'/productos'}className='links'>Productos</NavLink>
+                    <NavLink to={'/categoria/Dulce'}className='links'>Perfumes Dulce</NavLink>
+                </li>
+                <li>
+                    <NavLink to={'/categoria/Floral'}className='links'>Perfumes Floral</NavLink>
+                </li>
+                <li>
+                    <NavLink to={'/categoria/Tropical'}className='links'>Perfumes Tropical</NavLink>
                 </li>
                 
                 {/* Componente cardwidget */}

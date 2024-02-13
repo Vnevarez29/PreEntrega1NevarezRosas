@@ -1,24 +1,33 @@
 import React, { useEffect, useState } from 'react'
 import ItemList from '../ItemList/ItemList';
 import "./ItemListContainer.css";
+import { useParams } from 'react-router-dom';
 
 const ItemListContainer = () => {
 
   const [arrayProductos, setArrayProductos] = useState([]);
-
+  const{nameCategoria}= useParams();
+  
   useEffect(() => {
     const datosFetch = async () => {
       try {
-        const response = await fetch("./productos.json");
+        const response = await fetch("/productos.json");
         const data = await response.json()
-        setArrayProductos(data);
+
+        if(nameCategoria){
+          const filtro = data.filter((e)=>e.categoria == nameCategoria);
+          setArrayProductos(filtro);
+        }
+        else{
+          setArrayProductos(data);
+        }
       }
       catch (error) {
         console.log("Error en el fetch" + error);
       }
     }
     datosFetch();
-  }, [])
+  }, [nameCategoria])
 
   return (
     <div className='estilo'>
