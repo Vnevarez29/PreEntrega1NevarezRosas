@@ -11,6 +11,11 @@
     text-decoration: none;
 }
 
+.active{
+     color: thistle;
+     font-weight: bold;
+}
+
 li{
     list-style: none;
 }
