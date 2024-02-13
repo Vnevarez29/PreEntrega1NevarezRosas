@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import "./ItemCount.css";
 
-const ItemCount = () => 
+const ItemCount = ({valInicial, stock}) => 
 {
     const [contador, setContador]= useState(1);
 
     const aumentar=()=>
     {
-        if(contador <10)
+        if(contador < stock)
         {
             setContador(contador+1);
         }
@@ -19,7 +19,7 @@ const ItemCount = () =>
 
     const decrementar =() =>
     {
-        if(contador>1)
+        if(contador > valInicial)
         {
             setContador(contador-1);
         }
