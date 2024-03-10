@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import "./ItemCount.css";
+import ItemDetail from '../ItemDetail/ItemDetail';
 
-const ItemCount = ({valInicial, stock}) => 
+const ItemCount = ({valInicial, stock, agregarCarrito}) => 
 {
     const [contador, setContador]= useState(1);
 
@@ -29,16 +30,17 @@ const ItemCount = ({valInicial, stock}) =>
         }
     }
 
-    const agregarCarrito =()=>
+    const agregarCart =() =>
     {
-        alert("Se han agregado "+contador+" elementos al carrito")
+        agregarCarrito(contador);
     }
+
 
   return (
     <div>
         <p className='parrafo'>{contador}</p> 
         <button className="boton" onClick={aumentar}>+</button> 
-        <button className="botonAdd" onClick={agregarCarrito}>Agregar al carrito</button>
+        <button className="botonAdd" onClick={agregarCart}>Agregar al carrito</button>
         <button className="boton" onClick={decrementar}>-</button>
     </div>
   )
