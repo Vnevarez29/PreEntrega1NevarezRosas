@@ -9,29 +9,41 @@ const CartProvider=({children})=>{
     const [totArticulos, setTotalArticulos]= useState(0);
 
     const agregarCarrito =(producto, cantidad)=>{
-        const product={'Producto:': producto, 'Cantidad:': cantidad}
+        const existeProd = carrito.find(p => p.producto.id == producto.id)
+        if(existeProd)
+        {
+            const nuevoCarrito = [...carrito]
+            nuevoCarrito[existeProd].cantidad += cantidad;
+            setCarrito(nuevoCarrito)
+        }
+        else{
+            setCarrito([...carrito,{producto,cantidad}])
+        }
     }
 
-    const eliminarArticulo=()=>{
-
+    const eliminarArticulo=(id)=>{
+        const nuevoCarrito= carrito.filter(p => p.producto.id !== id)
+        setCarrito(nuevoCarrito);
     }
 
     const vaciarCarrito=()=>{
-
+        setCarrito([]);
     }
 
     const verCantProductos = ()=>{
-
+        const total= carrito.reduce((total, articulos)=> total+articulos.cantidad,0)
+        return total;
     }
 
     const verTotalCarrito = () =>{
-
+        const montoFinal = carrito.reduce((total, articulo)=> total + (articulo.producto.precio * articulo.cantidad),0)
+        return montoFinal;
     }
 
     return(
 
-        <CartContext.Provider value={{ carrito, total, totArticulos, 
-        agregarCarrito}}>
+        <CartContext.Provider value={{ carrito, agregarCarrito, eliminarArticulo, 
+        vaciarCarrito, verCantProductos, verTotalCarrito }}>
             {children}
         </CartContext.Provider>
     )
