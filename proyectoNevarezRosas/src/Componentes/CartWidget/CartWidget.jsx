@@ -4,11 +4,12 @@ import { CartContext } from '../../context/CartContext'
 
 export const CartWidget = () => {
 
-  const {totArticulos}= useContext(CartContext);
+  const {verCantProductos}= useContext(CartContext);
+
   return (
     <>
         <img src="./empty-car.png" alt="" className='carrito'/>
-        <p>{totArticulos ==0 ? null : totArticulos}</p>
+        <p>{verCantProductos() == 0 ? null : verCantProductos()}</p>
     </>
     
   )

@@ -5,19 +5,19 @@ export const CartContext= createContext();
 const CartProvider=({children})=>{
 
     const [carrito, setCarrito]= useState([]);
-    const [total, setTotal]= useState(0);
-    const [totArticulos, setTotalArticulos]= useState(0);
+   
 
     const agregarCarrito =(producto, cantidad)=>{
-        const existeProd = carrito.find(p => p.producto.id == producto.id)
-        if(existeProd)
+        const existeProd = carrito.findIndex(p => p.producto.id == producto.id)
+        if(existeProd==-1)
         {
+            setCarrito([...carrito,{producto,cantidad}])
+            
+        }
+        else{
             const nuevoCarrito = [...carrito]
             nuevoCarrito[existeProd].cantidad += cantidad;
             setCarrito(nuevoCarrito)
-        }
-        else{
-            setCarrito([...carrito,{producto,cantidad}])
         }
     }
 

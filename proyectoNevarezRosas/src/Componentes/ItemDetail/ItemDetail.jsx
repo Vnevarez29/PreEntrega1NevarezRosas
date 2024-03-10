@@ -3,7 +3,7 @@ import ItemCount from '../ItemCount/ItemCount'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../../context/CartContext'
 
-const ItemDetail = ({ prod }) => {
+const ItemDetail = ({prod}) => {
 
   const [carrito, setCarrito] = useState(false);
 
@@ -12,7 +12,7 @@ const ItemDetail = ({ prod }) => {
   const agregarAlCart = (cantidad) => {
     setCarrito(true);
     agregarCarrito(prod, cantidad)
-    console.log(cantidad);
+    
   }
 
   return (
