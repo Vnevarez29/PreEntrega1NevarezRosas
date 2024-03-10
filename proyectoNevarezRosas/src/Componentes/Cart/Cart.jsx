@@ -17,10 +17,13 @@ export const Cart = () => {
                 <>
                     <h1>Lista de articulos</h1>
                     {Cart.map((art) => (
-                        <CartItem key={art.id} prod={p} />
+                        <CartItem key={art.id} prod={p} eliminarArticulo={eliminarArticulo}/>
                     ))}
+
+                    <p>Total: ${verTotalCarrito()}</p>
+                    <button onClick={vaciarCarrito}>Vaciar Carrito</button>
                 </>
-            }
+                 }
         </div>
     )
 }
