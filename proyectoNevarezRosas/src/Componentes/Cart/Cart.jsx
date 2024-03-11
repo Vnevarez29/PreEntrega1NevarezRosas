@@ -18,7 +18,7 @@ export const Cart = () => {
                 <>
                     <h1>Lista de articulos</h1>
                     {carrito.map((art) => (
-                        <CartItem key={art.id} producto={art} eliminarArticulo={eliminarArticulo} />
+                        <CartItem key={art.producto.id} producto={art} eliminarArticulo={eliminarArticulo} />
                     ))}
 
                     <p>Total: ${verTotalCarrito()}</p>
