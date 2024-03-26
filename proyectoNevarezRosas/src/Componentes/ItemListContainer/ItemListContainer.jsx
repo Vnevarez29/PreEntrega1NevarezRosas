@@ -25,11 +25,8 @@ const ItemListContainer = () => {
         return {id: doc.id,...data} 
       })
       setArrayProductos(nuevaColeccion);
-      console.log(nuevaColeccion);
     })
     .catch((error)=> console.log(error));
-
-
     // const datosFetch = async () => {
     //   try {
     //     const response = await fetch("/productos.json");
