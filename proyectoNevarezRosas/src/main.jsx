@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { initializeApp } from "firebase/app";
+import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAZFPiihzV47pcl1_IO4wGcxFCFXpLrh_g",
@@ -15,7 +16,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-export const db= getFireStore(app);
+export const db= getFirestore(app);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
